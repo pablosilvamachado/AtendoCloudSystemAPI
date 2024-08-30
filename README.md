@@ -50,7 +50,6 @@ Para criar o banco de dados e aplicar as migrações necessárias, execute:
 
 ```bash
 dotnet ef database update
-}
 ```
 
 4. Executar o Projeto
@@ -82,18 +81,20 @@ npm install
 3. Configurar a URL da API
 No arquivo environment.ts, configure a URL da API para apontar para o backend:
 
-typescript
-Copiar código
+```bash
 export const environment = {
   production: false,
   apiUrl: 'https://localhost:5001/api'
 };
+```
+
 4. Rodar o Frontend
 Finalmente, para rodar a aplicação Angular, execute:
 
-bash
-Copiar código
+```bash
 ng serve --open
+```
+
 A aplicação frontend estará disponível em http://localhost:4200.
 
 Testes Unitários
@@ -101,12 +102,16 @@ Testes Unitários
 Backend
 Para rodar os testes unitários no backend, execute:
 
+```bash
 dotnet test
+```
 
 Frontend
 Para rodar os testes unitários no frontend, execute:
 
+```bash
 ng test
+```
 
 Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para enviar um pull request ou abrir uma issue no GitHub.
