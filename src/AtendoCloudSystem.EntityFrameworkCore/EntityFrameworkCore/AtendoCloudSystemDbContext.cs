@@ -5,6 +5,7 @@ using AtendoCloudSystem.Authorization.Users;
 using AtendoCloudSystem.MultiTenancy;
 using AtendoCloudSystem.Events;
 using AtendoCloudSystem.Tables;
+using AtendoCloudSystem.Menus;
 
 namespace AtendoCloudSystem.EntityFrameworkCore
 {
@@ -18,6 +19,10 @@ namespace AtendoCloudSystem.EntityFrameworkCore
         public virtual DbSet<Table> Tables { get; set; }
 
         public virtual DbSet<TableRegistration> TableRegistrations { get; set; }
+
+        public virtual DbSet<Menu> Menus { get; set; }
+
+        public virtual DbSet<MenuRegistration> MenuRegistrations { get; set; }
 
         public AtendoCloudSystemDbContext(DbContextOptions<AtendoCloudSystemDbContext> options)
             : base(options)
