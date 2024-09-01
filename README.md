@@ -25,7 +25,8 @@ Para obter uma cópia local do projeto, você pode clonar o repositório usando 
 ```bash
 git clone https://github.com/pablosilvamachado/AtendoCloudSystemAPI.git
 ```
-Configuração do Backend
+
+##Configuração do Backend
 Após clonar o repositório, navegue até a pasta raiz do projeto e siga as etapas abaixo para configurar o backend.
 
 1. Restaurar os Pacotes NuGet
@@ -89,7 +90,7 @@ export const environment = {
 ```
 
 4. Rodar o Frontend
-Finalmente, para rodar a aplicação Angular, execute:
+Para rodar a aplicação Angular, execute:
 
 ```bash
 ng serve --open
